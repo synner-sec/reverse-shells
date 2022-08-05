@@ -1,7 +1,7 @@
 # Modify Reverse Shells
 `python3 -c 'import pty; pty.spawn("/bin/bash")'`
 
-CTRL + Z
+ctrl-z
 
 `stty raw -echo; fg`
 
